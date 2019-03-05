@@ -24,9 +24,6 @@
                                 <date key="date" timeIntervalSinceReferenceDate="573444952.62886298">
                                     <!--2019-03-05 02:15:52 +0000-->
                                 </date>
-                                <connections>
-                                    <action selector="datePikerselect:" destination="BYZ-38-t0r" eventType="valueChanged" id="UOg-Ef-8fb"/>
-                                </connections>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="วันที่" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLa-7J-vZj">
                                 <rect key="frame" x="16" y="49" width="30" height="21"/>
@@ -93,8 +90,7 @@
                                     <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonLike:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zu4-nV-vtB"/>
-                                    <action selector="likeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gv5-vT-qn0"/>
+                                    <action selector="happy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kJb-Re-rqx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7O-6m-fA3">
@@ -104,23 +100,7 @@
                                     <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonLike:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f13-VG-rAZ"/>
-                                    <action selector="likeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BKh-pg-hbd"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="o5E-J4-5zS">
-                                <rect key="frame" x="10" y="444" width="294" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeW-iO-8Ze">
-                                <rect key="frame" x="10" y="406" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="บันทึก"/>
-                                <connections>
-                                    <action selector="buttonSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AOz-Oo-Zo9"/>
+                                    <action selector="nothing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MfJ-dR-Cdo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpP-bM-P2c">
@@ -130,8 +110,22 @@
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonLike:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nEK-ZM-gAN"/>
-                                    <action selector="likeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4dn-jS-BK4"/>
+                                    <action selector="unhappy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KI8-6n-NoR"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="o5E-J4-5zS">
+                                <rect key="frame" x="10" y="397" width="294" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyJ-ce-goK">
+                                <rect key="frame" x="128" y="509" width="53" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="refreshComponent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r6t-6p-OhE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -140,10 +134,9 @@
                     </view>
                     <connections>
                         <outlet property="datePikerselect" destination="Apf-BN-fhp" id="nOM-yf-61r"/>
-                        <outlet property="likeButton" destination="rxG-7e-qHe" id="Ru3-BT-lz7"/>
                         <outlet property="textFieldplace" destination="oqJ-GW-wm7" id="tZS-jl-OdR"/>
                         <outlet property="textFieldproduct" destination="Y76-tK-g2h" id="75l-eY-Rlb"/>
-                        <outlet property="textView" destination="o5E-J4-5zS" id="QcO-CR-coe"/>
+                        <outlet property="textView" destination="o5E-J4-5zS" id="Zmn-nb-quF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
